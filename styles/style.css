@@ -1,1 +1,139 @@
-/* место для вашего кода */
+.body{
+  width: 1100px;
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.content-section {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr; 
+  align-items: center;
+  margin: 92px 24px 92px 24px;
+}
+
+.header__menu-list {
+  display: flex;
+  justify-content:center;
+  margin-top: 6.2px;
+  align-items: flex-end;
+  margin-left: 124px;
+  letter-spacing: 0.01em;
+  gap: 31px;
+  font-family:"Raleway",sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+  list-style-type: circle;
+}
+
+.header__menu_active{
+  list-style-type: none;
+}
+
+.header__menu-link {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.header__logo-image {
+  display: flex;/*тег а строчный,чтобы он реагировал на ширину,добавили это правило*/
+  width: 148px;
+  height: 105px;  
+}
+
+.contacts {
+  display: flex;
+  justify-self: center;
+  padding-left: 55px;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 2.51px;
+  margin-right: 63px;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.2px; 
+  letter-spacing: 0.01em;
+  
+}
+.contacts-link-active {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.cover {
+  display: flex;
+  background-image: url( "../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 165px 50px 51px;
+  margin-bottom: 179px;
+  position: relative;
+}
+ 
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: Raleway, sans-serif;;
+  color: #FFFFFF;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+
+.accent-span__text-left {
+  text-align: left;
+  line-height: 115px;
+  margin: 165px 734px 477px 50px;
+}
+
+.accent-span__text-center {
+  text-align: center;
+  line-height: 100px;
+  margin: 300px 395px 357px 336px;
+}
+
+.accent-span__text-right {
+width: 417px;
+height: 100px;
+top: 420px;
+left: 633px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+
+
