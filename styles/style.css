@@ -37,7 +37,7 @@ img {
   display: grid;
   grid-template-columns: 1.8fr 1.7fr 1.1fr;
   align-items: center;
-  padding: 92px 0px 98px 33px ;
+  padding: 92px 0px 95px 33px ;
   box-sizing: border-box;
 }
 
@@ -101,6 +101,16 @@ img {
   background-position: center center;
   padding: 165px 50px 51px 50px;
  }
+
+ .overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #000;
+}
  
 .cover-title {
   display: flex;
@@ -115,41 +125,64 @@ img {
   font-weight: bold;
   font-size: 100px;
   letter-spacing: 0.3em;
-  line-height: 115px;
 }
 
 .text-left{
   text-align: left; 
+  line-height:115px;
 }
 
 .text-center {
   text-align: center;
+  line-height: 100px;
 }
 
 .text-right {
   text-align: right;
+  line-height: 100px;
 }
+
 .space-extended {
   margin-left: 0.6em;
+}
+
+.text-left .space-extended {
+  position: relative;
+  right: 29px;
+}
+
+.text-center .space-extended {
+  position: relative;
+  right: 30px;
+}
+
+.text-right .space-extended {
+  position: relative;
+  left: 30px;
+}
+
+.text-right .no-space-extended {
+  position: relative;
+  left: 60px;
 }
 
 .cover-subline {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 28px;
 }
 
 .cover-subline-part {
   display: flex;
   justify-content: space-between;
-  gap:20px;
+  gap:24px;
   font-family: Raleway, sans-serif;
   color: #FFFFFF;
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
   text-transform: uppercase;
-  
 }
 
 .cover-buttum{
