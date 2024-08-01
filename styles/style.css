@@ -30,22 +30,20 @@ img {
 
 .content-section {
   box-sizing: border-box;
-  margin: auto;
+  
 }
 
 .header {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr; 
+  grid-template-columns: 1.8fr 1.7fr 1.1fr;
   align-items: center;
-  margin: 92px 24px 92px 24px;
+  padding: 86px 21px 89px 40px ;
 }
 
 .header__menu-list {
   display: flex;
   justify-content:center;
-  margin-top: 6.2px;
-  align-items: flex-end;
-  margin-left: 124px;
+  align-items: center;
   letter-spacing: 0.01em;
   gap: 31px;
   font-family:"Raleway",sans-serif;
@@ -66,24 +64,21 @@ img {
 
 .header__logo-image {
   display: flex;/*тег а строчный,чтобы он реагировал на ширину,добавили это правило*/
-  width: 148px;
-  height: 105px;  
+  max-width: 140px;
+  margin-left: 41px;
 }
 
 .contacts {
   display: flex;
-  justify-self: center;
-  padding-left: 55px;
+  justify-self: start;
   flex-direction: column;
   align-items: start;
-  margin-top: 2.51px;
-  margin-right: 63px;
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24.2px; 
+  line-height: 25px; 
   letter-spacing: 0.01em;
-  
+  max-width: 240px;
 }
 .contacts-link-active {
   border-bottom: 1px solid;
@@ -91,49 +86,53 @@ img {
 }
 
 .cover {
+  position: relative;
+  z-index: 0;
   display: flex;
+  flex-direction: column;
   background-image: url( "../images/cover.jpg");
+  min-height:757px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 165px 50px 51px;
-  margin-bottom: 179px;
-  position: relative;
+ 
 }
  
 .cover__title {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  font-family: Raleway, sans-serif;;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
   color: #FFFFFF;
+  font-weight: bold;
   font-size: 100px;
-  font-weight: 700;
   letter-spacing: 0.3em;
+  line-height: 115px;
 }
 
-.accent-span__text-left {
-  text-align: left;
-  line-height: 115px;
+.text-left{
   margin: 165px 734px 477px 50px;
 }
-
-.accent-span__text-center {
+.text-center {
+  
   text-align: center;
   line-height: 100px;
   margin: 300px 395px 357px 336px;
 }
 
-.accent-span__text-right {
-width: 417px;
-height: 100px;
-top: 420px;
-left: 633px;
-gap: 0px;
-opacity: 0px;
-
+.text-right {
+  text-align: right;
+  line-height: 100px;
+  margin: 420px 50px 237px 633px;
 }
+
+.space-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-space-extended {
+  letter-spacing: 0.3em;
+}
+
 
 
 
