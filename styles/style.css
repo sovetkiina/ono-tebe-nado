@@ -90,16 +90,22 @@ img {
   z-index: 0;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   background-image: url( "../images/cover.jpg");
-  min-height:757px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  padding: 165px 50px 51px 50px;
+ }
  
-}
- 
-.cover__title {
+.cover-title {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cover-title-part {
   font-family: Raleway, sans-serif;
   font-style: normal;
   color: #FFFFFF;
@@ -110,28 +116,20 @@ img {
 }
 
 .text-left{
-  margin: 165px 734px 477px 50px;
+  text-align: left; 
 }
+
 .text-center {
-  
   text-align: center;
-  line-height: 100px;
-  margin: 300px 395px 357px 336px;
 }
 
 .text-right {
   text-align: right;
-  line-height: 100px;
-  margin: 420px 50px 237px 633px;
 }
-
 .space-extended {
   letter-spacing: 0.6em;
 }
 
-.no-space-extended {
-  letter-spacing: 0.3em;
-}
 
 
 
