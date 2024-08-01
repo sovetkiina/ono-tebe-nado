@@ -88,21 +88,15 @@ img {
 .cover {
   position: relative;
   z-index: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 135px;
-  background-image: url( "../images/cover.jpg");
   width: 100%;
   height: 757px;
-  box-sizing: border-box;
+  background-image: url( "../images/cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 165px 50px 51px 50px;
- }
+}
 
- .overlay {
+.overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -111,14 +105,21 @@ img {
   opacity: 0.6;
   background: #000;
 }
- .cover-content {
+
+.cover-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   z-index: 10;
   width: 100%;
   height: 100%;
- }
+  gap: 135px;
+  padding: 165px 50px 51px 50px;
+  box-sizing: border-box;
+}
 
-.cover-title {
+ .cover-title {
   display: flex;
   flex-direction: column;
   gap: 20px;
