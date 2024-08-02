@@ -233,18 +233,21 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .lot-content-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 24px;
   background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
-  /*background-position: ;*/
+  background-position: center ;
+  background-size: cover;
   width: 334px; 
-  height: 563px;
+  height: 100%;
+  min-height: 563px;
+  
 }
 
 .card-theme {
