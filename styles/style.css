@@ -1,7 +1,7 @@
 .body{
   width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -45,7 +45,7 @@ img {
   align-items: center;
   letter-spacing: 0.01em;
   gap: 33px;
-  font-family:"Raleway",sans-serif;
+  font-family:'Raleway',sans-serif;
   font-size: 18px;
   font-weight: normal;
   color: #000000;
@@ -72,7 +72,7 @@ img {
   justify-self: start;
   flex-direction: column;
   align-items: start;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px; 
@@ -126,7 +126,7 @@ img {
 }
 
 .cover-title-part {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   color: #FFFFFF;
   font-weight: bold;
@@ -184,7 +184,7 @@ img {
   display: flex;
   justify-content: space-between;
   gap:24px;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #FFFFFF;
   font-size: 22px;
   line-height: 28px;
@@ -208,3 +208,66 @@ img {
   width: 256px;
 }
 
+.lots {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1052px; 
+  
+}
+
+.lots-title {
+  display: flex;
+  padding: 179px 915px 27px 40px;
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lot-content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 24px;
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  /*background-position: ;*/
+  width: 334px; 
+  height: 563px;
+}
+
+.card-theme {
+  display: flex;
+  padding: 51px 40px 241px 40px;
+  font-family: 'Raleway',sans-serif;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.card-text {
+  display: flex;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  padding-right: 40px;
+  font-family: 'Raleway',sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
