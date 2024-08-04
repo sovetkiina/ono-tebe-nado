@@ -35,7 +35,7 @@ img {
   display: grid;
   grid-template-columns: 1.8fr 1.7fr 1.1fr;
   align-items: center;
-  padding: 92px 0px 95px 33px ;
+  padding: 94px 50px 94px ;
   box-sizing: border-box;
 }
 
@@ -44,16 +44,20 @@ img {
   justify-content:center;
   align-items: center;
   letter-spacing: 0.01em;
-  gap: 33px;
+  gap: 31.4px;
   font-family:'Raleway',sans-serif;
   font-size: 18px;
   font-weight: normal;
-  color: #000000;
+  color: #000000; 
+}
+
+.header__menu-item {
   list-style-type: circle;
 }
 
-.header__menu_active{
-  list-style-type: none;
+.header__menu-item-active {
+  list-style: none;
+  
 }
 
 .header__menu-link {
@@ -61,10 +65,16 @@ img {
   text-decoration: none;
 }
 
-.header__logo-image {
+.header__menu-link-active {
+  border-bottom: none; 
+  text-decoration: none;
+}
+
+.header__logo-image-black {
   display: flex;/*тег а строчный,чтобы он реагировал на ширину,добавили это правило*/
-  max-width: 140px;
-  margin-left: 41px;
+  width: 148px;
+  height: 105px;
+  margin-left: 35px;
 }
 
 .contacts {
@@ -80,9 +90,20 @@ img {
   max-width: 240px;
 }
 
+.contacts-address {
+  line-height: 24.3px;
+}
+
+.contacts-address p {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
 .contacts-link-active {
   border-bottom: 1px solid;
   text-decoration: none;
+  font-style: normal;
 }
 
 .cover {
@@ -174,29 +195,26 @@ img {
   left: 60px;
 }
 
-.cover-subline {
+.cover__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 28px;
 }
 
-.cover-subline-part {
-  display: flex;
-  justify-content: space-between;
-  gap:24px;
+.cover__description-text {
+  
   font-family: 'Raleway', sans-serif;
   color: #FFFFFF;
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
   text-transform: uppercase;
+  word-spacing:19px
 }
 
-.cover-buttum {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.bet-button {
+  background: transparent;
   box-sizing: border-box;
   font-family: Raleway, sans-serif;
   color: #FFFFFF;
@@ -218,7 +236,7 @@ img {
   margin-bottom: 148px;
 }
 
-.lots-title {
+.lots__heading {
   display: flex;
   justify-content: flex-start;
   margin-left: 40px;
@@ -236,28 +254,60 @@ img {
   display: flex;
   flex-direction: row;
   gap: 25px;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   list-style: none;
-  
 }
 
-.lot-content-card-film {
+
+.card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.card_type_film {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   box-sizing: border-box;
-  padding: 50px 40px 48px 40px;
+  padding: 52px 40px 48px 40px;
   background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-position: center ;
   background-size: cover;
   width: 334px; 
-  height: 100%;
   min-height: 563px;
 }
-  
-.card-theme {
+
+.card_type_book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 51px 40px 48px 40px;
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  width: 334px; 
+  min-height: 563px;
+}
+
+.card_type_picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 51px 40px 48px 40px;
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  width: 334px; 
+  min-height: 563px;
+}
+
+.card__title {
   display: flex;
   font-family: 'Raleway',sans-serif;
   color: #FFFFFF;
@@ -270,7 +320,7 @@ img {
   text-underline-offset: 3px;
 }
 
-.card-text {
+.card__text {
   display: flex;
   font-family: 'Raleway',sans-serif;
   color: #FFFFFF;
@@ -278,38 +328,6 @@ img {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-}
-
-.lot-content-card-book {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 49px 40px 48px 40px;
-  background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center ;
-  background-size: cover;
-  width: 334px; 
-  height: 100%;
-  min-height: 563px;
-}
-
-.lot-content-card-picture {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 49px 40px 48px 40px;
-  background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center ;
-  background-size: cover;
-  width: 334px; 
-  height: 100%;
-  min-height: 563px;
 }
 
 .more {
@@ -323,25 +341,74 @@ img {
 }
 
 .more-link {
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 .about {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;/*не уверенна*/
-  align-items: baseline;/*не уверенна*/
+  align-items:flex-start;
+  gap: 72px;
+  margin-bottom: 193px;
 }
 
-.logo {
-  display: flex;
-  justify-content:start;
-  align-items: start;
+.about__logo {
+  position: relative;
+  width: 240px; 
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000000;
+  margin-left: 71px;
+  margin-top: 35px;
 }
 
-.about-auction {
+.about__logo-image {
+  position: absolute;
+  top: 64px; 
+  right: 0; 
+  left: 0;
+  margin:0 auto; 
+  max-width: 148px; 
+  height: 114px;
+}
+
+.about__column {
   display: flex;
-  justify-content:end;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 136px;
+  width: 693px;
+}
+
+.about-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+  margin-bottom: 98px;
+  text-transform: uppercase;
+}
+
+.about__paragraph {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.about__paragraph-no-margin {
+  margin-bottom: 0;
+}
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.8fr 1.7fr 1.1fr;
   align-items: center;
+  padding:;
+  box-sizing: border-box;
 }
+
 
