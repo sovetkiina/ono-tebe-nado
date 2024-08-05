@@ -37,17 +37,17 @@ img {
   display: grid;
   grid-template-columns: 1.8fr 1.7fr 1.1fr;
   align-items: center;
-  padding: 94px 50px 94px ;
+  padding: 94px 50px 94px;
   box-sizing: border-box;
 }
 
 .header__menu-list {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   letter-spacing: 0.01em;
   gap: 31.4px;
-  font-family:'Raleway',sans-serif;
+  font-family: 'Raleway',sans-serif;
   font-size: 18px;
   font-weight: normal;
   color: #000000; 
@@ -154,7 +154,7 @@ img {
 
 .text-left {
   text-align: left; 
-  line-height:115px;
+  line-height: 115px;
 }
 
 .text-center {
@@ -205,7 +205,7 @@ img {
   line-height: 28px;
   font-weight: 400;
   text-transform: uppercase;
-  word-spacing:19px
+  word-spacing: 19px;
 }
 
 .bet-button {
@@ -227,7 +227,7 @@ img {
   flex-direction: column;
   width: 1052px;
   margin: 0 auto;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin-bottom: 148px;
 }
 
@@ -331,7 +331,7 @@ img {
 
 .about {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: 72px;
   margin-bottom: 181px;
 }
@@ -351,7 +351,7 @@ img {
   top: 64px; 
   right: 0; 
   left: 0;
-  margin:0 auto; 
+  margin: 0 auto; 
   max-width: 148px; 
   height: 114px;
 }
@@ -441,5 +441,5 @@ img {
 .footer__social-icon {
   width: 48px;
   height: 48px;
-  border: 1px 0px 0px 0px;
+  border: 1px;
 }
