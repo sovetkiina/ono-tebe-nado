@@ -262,13 +262,11 @@ img {
 .card {
   position: relative;
   z-index: 0;
-  box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center ;
   background-size: cover;
   width: 334px; 
   min-height: 563px;
-  padding: 51px 40px 48px 40px;
 }
 
 .card_type_film {
@@ -289,6 +287,9 @@ img {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 51px 40px 48px 40px;
 
 }
 .card__title {
@@ -404,7 +405,6 @@ img {
   justify-content: center;
   box-sizing: border-box;
   flex-direction: column;
-  
 }
 
 .footer__menu-list {
