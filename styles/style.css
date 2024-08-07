@@ -41,7 +41,7 @@ img {
   padding: 94px 50px 94px;
 }
 
-.header__menu-list {
+.header__links-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,20 +53,17 @@ img {
   letter-spacing: 0.01em;
 }
 
-.header__menu-item {
+.header__links-list-item {
   list-style-type: circle;
 }
 
-.header__menu-item-active {
-  list-style: none;
-}
-
-.header__menu-link {
+.header__link {
   border-bottom: 1px solid;
   text-decoration: none;
 }
 
-.header__menu-link-active {
+.header__link_active {
+  list-style: none;
   border-bottom: none;
   text-decoration: none;
 }
@@ -96,7 +93,7 @@ img {
   letter-spacing: 0.01em;
 }
 
-.contacts-link-active {
+.contacts-link {
   border-bottom: 1px solid;
   font-style: normal;
   text-decoration: none;
@@ -106,7 +103,7 @@ img {
   position: relative;
   z-index: 0;
   width: 100%;
-  height: 757px;
+  min-height: 757px;
   margin-bottom: 179px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
@@ -212,8 +209,8 @@ img {
   box-sizing: border-box;
   width: 256px;
   height: 51px;
-  border: 1px solid #ffffff;
   color: #ffffff;
+  border: 1px solid currentColor;
   font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 22px;
@@ -291,6 +288,7 @@ img {
   height: 100%;
   padding: 51px 40px 48px 40px;
 }
+
 .card__title {
   display: flex;
   color: #ffffff;
