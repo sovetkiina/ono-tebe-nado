@@ -122,7 +122,7 @@ img {
 }
 
 .cover-content {
-  position: absolute;
+  position: relative;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -146,7 +146,7 @@ img {
   font-weight: bold;
   font-size: 100px;
   font-style: normal;
-  letter-spacing: 0.3em;
+  letter-spacing: 30px;
 }
 
 .text-left {
@@ -165,27 +165,11 @@ img {
 }
 
 .space-extended {
-  margin-left: 0.6em;
-}
-
-.text-left .space-extended {
-  position: relative;
-  right: 29px;
-}
-
-.text-center .space-extended {
-  position: relative;
-  right: 30px;
-}
-
-.text-right .space-extended {
-  position: relative;
-  left: 30px;
+  letter-spacing: 60px;
 }
 
 .text-right .no-space-extended {
-  position: relative;
-  left: 60px;
+  letter-spacing: 0px;
 }
 
 .cover__description {
@@ -279,7 +263,7 @@ img {
 }
 
 .content-card-lot {
-  position: absolute;
+  position: relative;
   z-index: 10;
   display: flex;
   flex-direction: column;
